@@ -3,7 +3,7 @@ export interface IModuleType {
   default: Array<RouteRecordRaw> | RouteRecordRaw
 }
 
-const modules = import.meta.glob<IModuleType>('./**/*.ts', { eager: true })
+const modules = import.meta.glob<IModuleType>('./modules/*.ts', { eager: true })
 
 const routeModuleList: RouteRecordRaw[] = Object.keys(modules).reduce(
   (list: RouteRecordRaw[], key) => {
@@ -17,7 +17,7 @@ const routeModuleList: RouteRecordRaw[] = Object.keys(modules).reduce(
 const redirectRoutes: RouteRecordRaw[] = [
   {
     path: '/',
-    redirect: '/home',
+    redirect: '/three',
   },
 ]
 

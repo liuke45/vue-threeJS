@@ -1,0 +1,24 @@
+.el-container {
+  height: 100%;
+}
+
+.el-container .el-header {
+  --el-header-padding: 0px;
+}
+
+.el-container {
+  box-sizing: content-box;
+  overflow: hidden;
+}
+
+.el-main {
+  padding: 12px !important;
+}
+
+.el-menu {
+  border-right: 0px !important;
+}
+
+.el-aside {
+  border-right: 1px solid #e6e6e6;
+}
