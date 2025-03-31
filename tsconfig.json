@@ -10,6 +10,10 @@
       // 用于设置模块名到基于baseUrl的路径映射
       "@/*": [ "src/*" ],
     },
-    "types": ["element-plus/global"]
+    "types": ["element-plus/global"],
+    "typeRoots": [
+      "./node_modules/@types",
+      "./src/types"
+    ]
   },
 }

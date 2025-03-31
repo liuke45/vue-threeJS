@@ -7,10 +7,31 @@ export {}
 /* prettier-ignore */
 declare module 'vue' {
   export interface GlobalComponents {
+    DrawingDatarRender: typeof import('./src/components/DrawingDatarRender/index.vue')['default']
+    ElAside: typeof import('element-plus/es')['ElAside']
     ElButton: typeof import('element-plus/es')['ElButton']
+    ElCollapse: typeof import('element-plus/es')['ElCollapse']
+    ElCollapseItem: typeof import('element-plus/es')['ElCollapseItem']
+    ElContainer: typeof import('element-plus/es')['ElContainer']
     ElEmpty: typeof import('element-plus/es')['ElEmpty']
+    ElHeader: typeof import('element-plus/es')['ElHeader']
+    ElIcon: typeof import('element-plus/es')['ElIcon']
+    ElMain: typeof import('element-plus/es')['ElMain']
+    ElMenu: typeof import('element-plus/es')['ElMenu']
+    ElMenuItem: typeof import('element-plus/es')['ElMenuItem']
+    ElMenuItemGroup: typeof import('element-plus/es')['ElMenuItemGroup']
+    ElScrollbar: typeof import('element-plus/es')['ElScrollbar']
+    ElSubMenu: typeof import('element-plus/es')['ElSubMenu']
+    ElTooltip: typeof import('element-plus/es')['ElTooltip']
+    FirstThreeJS: typeof import('./src/components/FirstThreeJS.vue')['default']
+    Header: typeof import('./src/components/layout/Header/Header.vue')['default']
     HelloWorld: typeof import('./src/components/HelloWorld.vue')['default']
+    LayoutHeader: typeof import('./src/components/layout/LayoutHeader.vue')['default']
+    LayoutLeftMenu: typeof import('./src/components/layout/LayoutLeftMenu.vue')['default']
+    LeftBar: typeof import('./src/components/layout/LeftBar/LeftBar.vue')['default']
     RouterLink: typeof import('vue-router')['RouterLink']
     RouterView: typeof import('vue-router')['RouterView']
+    SecondThreeJS: typeof import('./src/components/SecondThreeJS.vue')['default']
+    ThirdThreeJS: typeof import('./src/components/ThirdThreeJS.vue')['default']
   }
 }
