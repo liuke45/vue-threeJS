@@ -1,16 +1,8 @@
 <script setup lang="ts">
 import { materialMap } from '../constants/materialMap'
 import { ref } from 'vue'
-import { ThreeManager } from '@/libs/ThreeManager/ThreeManager'
-import * as THREE from 'three'
 
 const activeName = ref(materialMap.basic.title)
-const threeManager = ThreeManager.getInstance()
-
-const addMaterial = (creator: (...args: any[]) => THREE.Mesh) => {
-  const mesh = creator()
-  threeManager.addMesh(mesh)
-}
 </script>
 
 <template>
@@ -28,14 +20,14 @@ const addMaterial = (creator: (...args: any[]) => THREE.Mesh) => {
               v-for="material in item.materials"
               :key="material.name"
               class="material-item group"
-              @click="addMaterial(material.creator)"
+              @click="() => material.creator()"
             >
               <div
                 class="flex w-full flex-1 items-center justify-center rounded-md border border-gray-100 bg-gray-100"
               >
                 <img
                   draggable="false"
-                  class="h-1/2 w-1/2 transition-all duration-300 group-hover:rotate-180 group-hover:scale-150"
+                  class="h-1/2 w-1/2 transition-all duration-300 group-hover:scale-150"
                   :src="material.img"
                   alt=""
                 />

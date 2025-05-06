@@ -9,7 +9,7 @@ const threeManager = ThreeManager.getInstance()
 onMounted(() => {
   if (containerRef.value) {
     // 初始化 Three.js 管理器
-    // threeManager.initialize(containerRef.value)
+    threeManager.initialize(containerRef.value)
     // 创建一个示例立方体
     // const cube = threeManager.createCube(1, 0xfef4e8)
     // threeManager.addMesh(cube)

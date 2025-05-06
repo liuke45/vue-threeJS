@@ -7,7 +7,7 @@ export {}
 /* prettier-ignore */
 declare module 'vue' {
   export interface GlobalComponents {
-    DrawingDatarRender: typeof import('./src/components/DrawingDatarRender/index.vue')['default']
+    DrawingDataRender: typeof import('./src/components/DrawingDataRender/DrawingDataRender.vue')['default']
     ElAside: typeof import('element-plus/es')['ElAside']
     ElButton: typeof import('element-plus/es')['ElButton']
     ElCollapse: typeof import('element-plus/es')['ElCollapse']
@@ -29,9 +29,12 @@ declare module 'vue' {
     LayoutHeader: typeof import('./src/components/layout/LayoutHeader.vue')['default']
     LayoutLeftMenu: typeof import('./src/components/layout/LayoutLeftMenu.vue')['default']
     LeftBar: typeof import('./src/components/layout/LeftBar/LeftBar.vue')['default']
+    MaterialInfoForm: typeof import('./src/components/ThreeComp/MaterialInfoForm.vue')['default']
     RouterLink: typeof import('vue-router')['RouterLink']
     RouterView: typeof import('vue-router')['RouterView']
     SecondThreeJS: typeof import('./src/components/SecondThreeJS.vue')['default']
+    SuperForm: typeof import('./src/components/useForm/SuperForm.vue')['default']
     ThirdThreeJS: typeof import('./src/components/ThirdThreeJS.vue')['default']
+    UseMaterialInfoForm: typeof import('./src/components/ThreeComp/useMaterialInfoForm.vue')['default']
   }
 }
